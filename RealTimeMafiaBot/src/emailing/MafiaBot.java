@@ -33,7 +33,7 @@ public class MafiaBot {
             this.sendEmail(email, mafiaList);
         }
     }
-
+    
     public String getMafiaListText(ArrayList<Email> emails) {
         String mafiaListText = "";
         String separator = "";
@@ -50,12 +50,18 @@ public class MafiaBot {
 
     public ArrayList<Email> pickMafia(ArrayList<Email> emails) {
         int numMafia = 0;
-        while (numMafia < 3) {
+        int numSK = 0;
+        while (numMafia < 3 || numSK < 1) {
             Email picked = emails.get((int) (Math.random() * (emails.size())));
-            if (!picked.isMafia()) {
+            if (!picked.isMafia() && numMafia < 3) {
                 picked.setIsMafia(true);
                 numMafia++;
             }
+            else if (!picked.isMafia() && !(numMafia < 3)){
+                picked.setIsSK(true);
+                numSK++;
+            }
+            //System.out.println("Mafia Count: " + numMafia + "\nSK Count: " + numSK); // Diagnostic
         }
 
         return emails;
@@ -101,9 +107,19 @@ public class MafiaBot {
 
             message.setSubject("Real Time Mafia Role");
 
-            message.setText(to.getName() + ", you are " + ((to.isMafia())
-                    ? "a Mafia!\nPrepare to brutally murder some innocents!\nThe mafia are: " + mafiaList + "."
-                    : "an innocent!\nGood luck surviving!"));
+            String messageText = to.getName() + ", you are ";
+            if (to.isMafia()) {
+                messageText += "a Mafia!\nPrepare to brutally murder some innocents!\nThe mafia are: " + mafiaList + ".";
+            }
+            else if (to.isSK()) {
+                messageText += "a Serial Killer!\nLeave no survivors!";
+            }
+            else {
+                messageText += "an innocent!\nGood luck surviving!";
+            }
+            
+            message.setText(messageText);
+                    
         } catch (Exception e) {
             e.printStackTrace();
         }

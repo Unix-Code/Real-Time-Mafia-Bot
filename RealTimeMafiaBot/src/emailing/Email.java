@@ -8,16 +8,14 @@ public class Email {
     private String email;
     private String name;
     private boolean isMafia;
+    private boolean isSK;
+    
 
     public Email(String email, String name) {
         this.email = email;
         this.name = name;
-    }
-    
-    public Email(String email, String name, boolean isMafia) {
-        this.email = email;
-        this.name = name;
-        this.isMafia = isMafia;
+        this.isMafia = false;
+        this.isSK = false;
     }
 
     public String getName() {
@@ -28,6 +26,10 @@ public class Email {
         return email;
     }
 
+    public boolean isSK() {
+        return isSK;
+    }
+    
     public boolean isMafia() {
         return isMafia;
     }
@@ -35,6 +37,8 @@ public class Email {
     public void setIsMafia(boolean isMafia) {
         this.isMafia = isMafia;
     }
-    
-    
+
+    public void setIsSK(boolean isSK) {
+        this.isSK = isSK;
+    }
 }
