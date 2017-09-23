@@ -1,0 +1,4 @@
+Username: RealTimeMafia@gmail.com
+Password: kQTzE3WX3R5XcL7f
+
+smtp server: smtp.gmail.com
