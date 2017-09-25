@@ -5,8 +5,8 @@ Lillie Hoffart : hoffart.l@husky.neu.edu
 Pete McKay : mckay.p@husky.neu.edu
 Josh Gasper : gasper.j@husky.neu.edu
 Dan Brown : brown.dan@husky.neu.edu
-Haley Schwartz : shwartz.h@husky.neu.edu
-Wil Bussink : bussink.husky.neu.edu
+Haley Schwartz : schwartz.h@husky.neu.edu
+Wil Bussink : bussink.w@husky.neu.edu
 Michael Iskols : iskols.m@husky.neu.edu
 Justin Mudryk : mudryk.j@husky.neu.edu
 Matthew Colgrove : colgrove.m@husky.neu.edu
@@ -17,17 +17,17 @@ Alex De Martino : demartino.a@husky.neu.edu
 Akash Kaza : kaza.a@husky.neu.edu
 Kyle Tokiwa : tokiwa.k@husky.neu.edu
 Akhil Bagul : bagul.a@husky.neu.edu
-Tori Pacheco : pacheco.v@husky.neu.edu
+Tori Pacheco : pacheco.vi@husky.neu.edu
 Kai Danial Gravel-Pucillo : gravel-pucillo.k@husky.neu.edu
 Megan Bardis : bardis.m@husky.neu.edu
-Willa Shiomos : shiomos.w@husky.eu.edu
+Willa Shiomos : shiomos.w@husky.neu.edu
 Sabrina Kite : kite.s@husky.neu.edu
 Kelsey Raymond : raymond.ke@husky.neu.edu
 Yasmine Myftija : myftija.y@husky.neu.edu
 David Malakh : malakh.d@husky.neu.edu
 Karoline Weber : weber.ka@husky.neu.edu
 Justin Harvey : harvey.jus@husky.neu.edu
-Zelda Ferris : ferris.zWhusky.neu.edu
+Zelda Ferris : ferris.z@husky.neu.edu
 Catherine Clement : clement.ca@husky.neu.edu
 Gerard Valencia : valencia.g@husky.neu.edu
 Brooke Horesh : horesh.b@husky.neu.edu
